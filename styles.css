@@ -43,7 +43,6 @@ body,
   border-radius: 15px;
   box-sizing: border-box;
   min-height: 40px;
-  white-space: nowrap;
   font-size: 16px;
   padding: 7px;
   height: 50px;
@@ -79,6 +78,11 @@ body,
   background: hsl(169.66deg 98.31% 23.14%);
 }
 
+.button .text {
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-wrap: ellipsis;
+}
 
 
 body {
