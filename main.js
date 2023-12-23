@@ -33,7 +33,7 @@ function uploadFont() {
   
   let input = document.createElement('input');
   input.type = 'file';
-  input.accept = 'font';
+  input.accept = 'font/*';
   
   return new Promise(resolve => {
     
