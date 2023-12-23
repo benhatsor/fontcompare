@@ -22,8 +22,13 @@
   
   <div class="button-group horizontal">
   
-    <div class="upload font1 button"><a class="text">Upload font 1</a></div>
-    <div class="upload font2 button"><a class="text">Upload font 2</a></div>
+    <div class="upload font1 button">
+      <a class="text">Upload font 1</a>
+    </div>
+    
+    <div class="upload font2 button">
+      <a class="text">Upload font 2</a>
+    </div>
     
   </div>
   
@@ -31,11 +36,15 @@
   
 </div>
 
-<div class="compare screen visible">
+<div class="compare screen">
+
   <div class="title">Compare fonts</div>
-  <div class="button-group">
-    <div class="button">Show font 1 only</div>
+  
+  <div class="button-group horizontal">
+    <div class="toggle font1 button selected">Font 1</div>
+    <div class="toggle font2 button selected">Font 2</div>
   </div>
+  
 </div>
 
 <script src="main.js"></script>
