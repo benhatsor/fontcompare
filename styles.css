@@ -1,2 +1,106 @@
 
-
+.screen {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.screen:not(.visible) {
+  display: none;
+}
+
+.wrapper,
+.button-group {
+  display: flex;
+  flex-flow: column;
+  gap: 14px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.loading-text {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  color: #8696a0;
+}
+
+.button {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  min-height: 40px;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 7px 84px;
+  height: 50px;
+  width: 233px;
+  font-weight: 500;
+  background: hsl(216deg 20% 95.1%);
+  color: inherit;
+  box-shadow: inset 0 -2px 0 0 hsl(216 17% 93%);
+}
+
+.button:active {
+  background: hsl(216 17% 93%);
+  box-shadow: none;
+}
+
+.button.selected {
+  box-shadow: inset 0 0 0 2px #b2d7ff;
+}
+
+.button.disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+.button.primary {
+  background: hsl(169.22deg 100% 25.1%);
+  color: #fff;
+  box-shadow: inset 0 -2px 0 0 hsl(169.66deg 98.31% 23.14%);
+  margin-top: 7px;
+}
+
+.button.primary:active {
+  background: hsl(169.66deg 98.31% 23.14%);
+}
+
+
+
+body {
+  font-family: system-ui;
+  color: #3b4a54;
+}
+
+:root {
+  --ease-function: cubic-bezier(0.32, 0.08, 0.24, 1);
+  --cubic-function: cubic-bezier(0.4, 0, 0.25, 1);
+  --bounce-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+html, body {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  font-synthesis: none;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
