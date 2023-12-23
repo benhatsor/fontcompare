@@ -37,11 +37,11 @@ function uploadFont() {
   
   return new Promise(resolve => {
     
-    input.addEventListener('change', () => {
+    input.addEventListener('change', (e) => {
       
-      if (this.files && this.files[0]) {
+      if (e.files && e.files[0]) {
         
-        const file = this.files[0];
+        const file = e.files[0];
         
         resolve(file);
         
