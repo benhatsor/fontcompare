@@ -49,6 +49,8 @@ function uploadFont() {
       
     });
     
+    input.click();
+    
   });
   
 }
