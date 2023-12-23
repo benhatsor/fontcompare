@@ -3,7 +3,9 @@ const introScreen = document.querySelector('.intro.screen');
 const uploadButtons = introScreen.querySelectorAll('.upload.button');
 const compareButton = introScreen.querySelector('.compare.button');
 
+
 let font1, font2;
+
 
 uploadButtons.forEach(button => {
   
@@ -53,6 +55,19 @@ uploadButtons.forEach(button => {
   }
   
 });
+
+
+
+const compareScreen = document.querySelector('.compare.screen');
+
+
+compareButton.addEventListener('click', () => {
+  
+  compareScreen.classList.add('visible');
+  introScreen.classList.remove('visible');
+  
+});
+
 
 
 // utils
