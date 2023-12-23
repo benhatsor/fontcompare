@@ -84,11 +84,6 @@ body,
 body {
   font-family: system-ui;
   color: #3b4a54;
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
 }
 
 :root {
