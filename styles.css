@@ -17,6 +17,10 @@ body {
   display: none;
 }
 
+.button-group.horizontal {
+  flex-flow: row;
+}
+
 .title {
   font-size: 21px;
   font-weight: 500;
