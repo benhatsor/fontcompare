@@ -51,6 +51,7 @@ body,
   background: hsl(216deg 20% 95.1%);
   color: inherit;
   box-shadow: inset 0 -2px 0 0 hsl(216 17% 93%);
+  white-space: nowrap;
 }
 
 .button:active {
