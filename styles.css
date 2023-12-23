@@ -44,7 +44,7 @@ body,
   box-sizing: border-box;
   min-height: 40px;
   font-size: 16px;
-  padding: 7px;
+  padding: 7px 21px;
   height: 50px;
   width: 233px;
   font-weight: 500;
@@ -81,7 +81,7 @@ body,
 .button .text {
   overflow: hidden;
   white-space: nowrap;
-  overflow-wrap: ellipsis;
+  text-overflow: ellipsis;
 }
 
 
