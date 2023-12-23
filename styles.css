@@ -1,5 +1,7 @@
 
-body {
+body,
+.screen,
+.button-group {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +10,6 @@ body {
 
 .screen,
 .button-group {
-  display: flex;
-  flex-flow: column;
   gap: 14px;
 }
 
