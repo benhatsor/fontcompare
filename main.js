@@ -1,6 +1,7 @@
 
 const introScreen = document.querySelector('.intro.screen');
 const uploadButtons = introScreen.querySelectorAll('.upload.button');
+const compareButton = introScreen.querySelector('.compare.button');
 
 let font1, font2;
 
@@ -24,9 +25,32 @@ uploadButtons.forEach(button => {
       
     }
     
+    
     button.classList.add('selected');
     
+    if (bothButtonsSelected()) {
+      
+      compareButton.classList.remove('disabled');
+      
+    }
+    
   });
+  
+  function bothButtonsSelected() {
+    
+    let resp = true;
+    
+    uploadButtons.forEach(button => {
+      
+      if (!button.classList.contains('selected')) {
+        resp = false;
+      }
+      
+    });
+    
+    return resp;
+    
+  }
   
 });
 
