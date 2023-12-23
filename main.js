@@ -6,9 +6,13 @@ let font1, font2;
 
 uploadButtons.forEach(button => {
   
+  const textEl = button.querySelector('.text');
+  
   button.addEventListener('click', async () => {
     
     const font = await uploadFont();
+    
+    textEl.textContent = font.name;
     
     if (button.classList.contains('font1')) {
       
