@@ -130,6 +130,10 @@ body,
   mix-blend-mode: lighten;
 }
 
+.comparison-viewer .inv-intersection {
+  filter: invert(1);
+}
+
 
 
 body {
