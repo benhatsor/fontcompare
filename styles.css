@@ -101,6 +101,10 @@ body,
   box-sizing: border-box;
 }
 
+.comparison-viewer .view:not(.visible) {
+  display: none;
+}
+
 .comparison-viewer :is(.view, .sub-view) {
   position: absolute;
   font-size: 50vh;
