@@ -1,4 +1,10 @@
 
+:root {
+  --font-1: sans-serif;
+  --font-2: system-ui;
+}
+
+
 body,
 .screen,
 .button-group {
@@ -105,11 +111,11 @@ body,
 }
 
 .comparison-viewer .font1 {
-  font-family: var(--font-1), sans-serif;
+  font-family: var(--font-1);
 }
 
 .comparison-viewer .font2 {
-  font-family: var(--font-2), system-ui;
+  font-family: var(--font-2);
 }
 
 .comparison-viewer .intersection .sub-view {
