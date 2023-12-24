@@ -86,7 +86,7 @@ body,
 }
 
 
-.compare.screen .comparison-viewer {
+.comparison-viewer {
   height: 50vh;
   width: 100%;
   position: relative;
@@ -96,12 +96,28 @@ body,
   pointer-events: none;
 }
 
-.compare.screen .comparison-viewer .view {
+.comparison-viewer :is(.view, .sub-view) {
   position: absolute;
   font-size: 50vh;
+  line-height: 50vh;
   width: 100%;
   text-align: center;
-  line-height: 50vh;
+}
+
+.comparison-viewer .font1 {
+  font-family: var(--font-1);
+}
+
+.comparison-viewer .font2 {
+  font-family: var(--font-2);
+}
+
+.comparison-viewer .intersection.view .sub-view {
+  color: #fff;
+}
+
+.comparison-viewer .intersection.view .sub-view.font2 {
+  mix-blend-mode: difference;
 }
 
 
