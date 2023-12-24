@@ -7,8 +7,8 @@ const compareScreen = document.querySelector('.compare.screen');
 
 const toggleButtons = compareScreen.querySelectorAll('.toggle.button');
 
-const toggleText1 = toggleButtons[0].querySelector('.text'),
-      toggleText2 = toggleButtons[1].querySelector('.text');
+const fontToggleText1 = toggleButtons[0].querySelector('.text'),
+      fontToggleText2 = toggleButtons[1].querySelector('.text');
 
 
 
@@ -67,13 +67,31 @@ uploadButtons.forEach(button => {
 
 function showCompareScreen() {
   
-  toggleText1.textContent = font1.name;
-  toggleText2.textContent = font2.name;
+  fontToggleText1.textContent = font1.name;
+  fontToggleText2.textContent = font2.name;
   
   compareScreen.classList.add('visible');
   introScreen.classList.remove('visible');
   
 }
+
+
+toggleButtons.forEach(button => {
+  
+  button.addEventListener('click', () => {
+    
+    if (!button.classList.contains('selected')) {
+      
+      const prevSelButton = compareScreen.querySelector('.toggle.button.selected');
+      prevSelButton.classList.remove('selected');
+      
+      button.classList.add('selected');
+      
+    }
+    
+  });
+  
+});
 
 
 
