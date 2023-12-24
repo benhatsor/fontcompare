@@ -105,19 +105,23 @@ body,
 }
 
 .comparison-viewer .font1 {
-  font-family: var(--font-1);
+  font-family: var(--font-1), sans-serif;
 }
 
 .comparison-viewer .font2 {
-  font-family: var(--font-2);
+  font-family: var(--font-2), system-ui;
 }
 
-.comparison-viewer .intersection.view .sub-view {
+.comparison-viewer .intersection .sub-view {
   color: #fff;
 }
 
-.comparison-viewer .intersection.view .sub-view.font2 {
+.comparison-viewer .intersection .sub-view.font2 {
   mix-blend-mode: difference;
+}
+
+.comparison-viewer .lighten .sub-view {
+  mix-blend-mode: lighten;
 }
 
 
