@@ -116,14 +116,16 @@ body,
 
 .comparison-viewer .font1 {
   font-family: var(--font-1);
+  color: rebbecapurple;
 }
 
 .comparison-viewer .font2 {
   font-family: var(--font-2);
+  color: blue;
 }
 
 .comparison-viewer .intersection .sub-view {
-  color: #fff;
+  color: #fff !important;
 }
 
 .comparison-viewer .intersection .sub-view.font2 {
