@@ -40,9 +40,22 @@
 
   <div class="comparison-viewer">
   
-    <div class="view intersection">
-      <div class="sub-view font1">A</div>
-      <div class="sub-view font2">A</div>
+    <div class="view inv-intersection" style="filter: invert(1);">
+    
+      <div class="sub-view intersection" style="filter: invert(1);">
+        <div class="sub-view font1">A</div>
+        <div class="sub-view font2">A</div>
+      </div>
+      
+      <div class="sub-view lighten" style="filter: invert(1);">
+        <div class="sub-view font1" style="color: rebeccapurple; mix-blend-mode: lighten;">A</div>
+        <div class="sub-view font2" style="color: blue; mix-blend-mode: lighten;">A</div>
+      </div>
+      
+      <div class="sub-view intersection" style="filter: none; mix-blend-mode: darken;">
+        <div class="sub-view font1">A</div>
+        <div class="sub-view font2">A</div>
+      </div>
     </div>
     
     <div class="view font1">A</div>
@@ -70,7 +83,7 @@
     
   </div>
   
-</div>
+</div>  
 
 <script src="main.js"></script>
 
