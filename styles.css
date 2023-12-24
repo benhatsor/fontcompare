@@ -86,6 +86,26 @@ body,
 }
 
 
+.compare.screen .comparison-viewer {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  border: 2px solid hsl(216deg 20% 95.1%);
+  border-radius: 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.compare.screen .comparison-viewer .view {
+  position: absolute;
+  font-size: 50vh;
+  width: 100%;
+  text-align: center;
+  line-height: 50vh;
+}
+
+
+
 body {
   font-family: system-ui;
   color: #3b4a54;
